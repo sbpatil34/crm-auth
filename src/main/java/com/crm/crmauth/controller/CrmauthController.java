@@ -11,4 +11,10 @@ public class CrmauthController {
     public String getCustomer(){
         return "from crm auth get customer";
     }
+
+    @GetMapping("/home")
+    public String getHome(){
+        System.out.println("from get home");
+        return "from home endpoint";
+    }
 }
